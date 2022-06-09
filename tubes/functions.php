@@ -107,7 +107,22 @@ function ubah($data) {
     $stok = htmlspecialchars($data["stok"]);
     $manfaat = htmlspecialchars($data["manfaat"]);
     $konsumen = htmlspecialchars($data["konsumen"]);
-    $gambar = htmlspecialchars($data["gambar"]);
+    // $gambar = htmlspecialchars($data["gambar"]);
+    $gambarLama = htmlspecialchars($data["gambarLama"]);
+
+    // cek apakah user pilih gambar baru atau tidak
+    if($_FILES['gambar']['error'] === 4){
+        $gambar = $gambarLama;
+    } else{ 
+        // upload gambar
+        $gambar = upload();
+        if(!$gambar) {
+            return false;
+        }
+    }
+
+    
+
     $query = "UPDATE obat SET
                 nama_obat = '$nama_obat',
                 harga = '$harga',
@@ -121,7 +136,9 @@ function ubah($data) {
     mysqli_query($conn, $query) or die(mysqli_error($conn));
 
     return mysqli_affected_rows($conn);
-}
+}  
+
+
 
 
 function cari($keyword) {

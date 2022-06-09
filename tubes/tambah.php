@@ -53,6 +53,24 @@ if( isset($_POST["submit"]) ) {
                 <label for="bentuk">BENTUK : </label>
                 <input type="text" name="bentuk" id="bentuk">
             </li>
+            <!-- <div class="mb-3">
+                            <label for="merek" class="form-label">Bentuk</label>
+                            <select class="form-select" name="merek" required="" id="merek">
+                                <option disabled="" selected="">Pilih Bentuk</option>
+                                <option value="1">Infus</option>
+                                <option value="2">Tablet</option>
+                                <option value="3">Kapsul</option>
+                                <option value="4">Salep</option>
+                                <option value="5">Obat cair</option>
+                                <option value="6">Permen</option>
+                                <option value="7">Suntik</option>
+                                <option value="8">Gel</option>
+                                <option value="9">Krim</option>
+                                <option value="10">Sirop</option>
+                                <option value="11">Serbuk</option> -->
+
+                            </select>
+                        </div>
             <li>
                 <label for="stok">STOK : </label>
                 <input type="text" name="stok" id="stok">

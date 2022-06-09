@@ -39,7 +39,7 @@ $data = query("SELECT * FROM obat");
                 <a class="nav-link" href="../tubes/registrasi.php">Register</a>
             </li>
             <li class="nav-item  fw-bold m-1" style="background-color:#F7B733 ;">
-                <a class="nav-link" href="pages/login.php">Masuk</a>
+                <a class="nav-link" href="../tubes/pages/login.php">Masuk</a>
             </li>
           </ul>
       </div>

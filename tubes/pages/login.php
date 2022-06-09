@@ -18,7 +18,7 @@ if( isset($_COOKIE['login']) && isset($_COOKIE['key']) ) {
 }
 
 if( isset($_SESSION["login"]) ) {
-    header("location: ../dashboard.php");
+    header("location: ../tables.php");
     exit;
 }
 

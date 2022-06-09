@@ -24,14 +24,14 @@ if( isset($_POST["submit"]) ) {
         echo "
             <script>
                 alert('data berhasil diubah');
-                document.location.href = 'admin.php';
+                document.location.href = 'tables.php';
             </script>
         ";
     } else {
         echo "
             <script>
                 alert('data gagal diubah');
-                document.location.href = 'admin.php';
+                document.location.href = 'tables.php';
             </script>
         ";
         
@@ -43,15 +43,16 @@ if( isset($_POST["submit"]) ) {
 <html>
 <head>
     <title>Ubah data obat</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2z/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
         <div class="col-md-6">
     <h1>Ubah data obat</h1>
 
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
         <input type="hidden" name="kode_obat" value="<?= $obat["kode_obat"]; ?>">
+        <input type="hidden" name="gambarLama" value="<?= $obat["gambar"]; ?>">
         <ul>
             <div class="mb-3">
                 <label for="nama_obat" class="form-label">NAMA_OBAT : </label>

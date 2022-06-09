@@ -25,6 +25,17 @@ if (isset($_GET["keyword"])) {
       <aside class="z-20 flex-shrink-0 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block">
         <div class="py-4 text-gray-500 dark:text-gray-400">
           <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="#"> OBAT</a>
+          <div class="d-flex sidebar-profile">
+              <div class="sidebar-profile-image ml-6 mt-8">
+                <img src="img/emil.jpeg" width="100" alt="image" class="rounded-circle">
+                <span class="sidebar-status-indicator"></span>
+              </div>
+          </div>
+          <div class="sidebar-profile-name">
+                <p class="sidebar-name ml-6 fw-bold">
+                 Emilia Paradila S
+                </p>
+              </div>
           <ul>
             <li class="relative px-6 py-3">
               <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
@@ -63,7 +74,7 @@ if (isset($_GET["keyword"])) {
       >
         <div class="py-4 text-gray-500 dark:text-gray-400">
           <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="#"> OBAT </a>
-          <ul>
+          <ul>tam
             <li class="relative px-6 py-3">
               <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
               <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100" href="tables.php">
@@ -162,7 +173,7 @@ if (isset($_GET["keyword"])) {
           <div class="container grid px-6 mx-auto">
             <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">Tables</h2>
             <a href="tambah.php" class="btn btn-rounded circle btn-primary mt-2 col-2">Tambah data obat</a>
-
+            <a href="report.php" class="mb-4 btn btn-outline-success btn-sm btn-info mt-2 col-2">Cetak PDF</a>
 
             <!-- With actions -->
             <div class="w-full overflow-hidden rounded-lg shadow-xs">
@@ -218,31 +229,10 @@ if (isset($_GET["keyword"])) {
                           </svg>
                         </button>
                       </li>
-                      <li>
-                        <button class="px-3 py-1 rounded-md focus:outline-none focus:shadow-outline-purple">1</button>
-                      </li>
-                      <li>
-                        <button class="px-3 py-1 rounded-md focus:outline-none focus:shadow-outline-purple">2</button>
-                      </li>
-                      <li>
-                        <button class="px-3 py-1 text-white transition-colors duration-150 bg-purple-600 border border-r-0 border-purple-600 rounded-md focus:outline-none focus:shadow-outline-purple">3</button>
-                      </li>
-                      <li>
-                        <button class="px-3 py-1 rounded-md focus:outline-none focus:shadow-outline-purple">4</button>
-                      </li>
-                      <li>
-                        <span class="px-3 py-1">...</span>
-                      </li>
-                      <li>
-                        <button class="px-3 py-1 rounded-md focus:outline-none focus:shadow-outline-purple">8</button>
-                      </li>
-                      <li>
-                        <button class="px-3 py-1 rounded-md focus:outline-none focus:shadow-outline-purple">9</button>
-                      </li>
-                      <li>
+                     <li>
                         <button class="px-3 py-1 rounded-md rounded-r-lg focus:outline-none focus:shadow-outline-purple" aria-label="Next">
                           <svg class="w-4 h-4 fill-current" aria-hidden="true" viewBox="0 0 20 20">
-                            <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" fill-rule="evenodd"s></path>
+                            <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path>
                           </svg>
                         </button>
                       </li>
